@@ -9,18 +9,17 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Todo2Api.Entities;
-using Todo2Api.Models;
+using Todo2Api.V2.Entities;
+using Todo2Api.V2.Models;
 
-namespace Todo2Api.Controllers {
-    [Route ("api/Todo")]
-    [ApiVersion ("1.0")]
+namespace Todo2Api.V2.Controllers {
+    [ApiVersion("2.0")]  
+    [Route("api/v{version:apiVersion}/[controller]")] 
     [ApiController]
-    [Authorize]
-    public class TodoV1Controller : ControllerBase {
+    public class TodoController : ControllerBase {
         private readonly TodoContext _context;
 
-        public TodoV1Controller (TodoContext context) {
+        public TodoController (TodoContext context) {
             _context = context;
             if (_context.TodoItems.Count () == 0) {
                 _context.TodoItems.Add (new TodoItem { Name = "Item1" });
@@ -75,24 +74,5 @@ namespace Todo2Api.Controllers {
         // DELETE api/values/5
         [HttpDelete ("{id}")]
         public void Delete (int id) { }
-    }
-
-    [Route ("api/Todo")]
-    [ApiVersion ("0.0")]
-    [ApiController]
-    public class TodoV2Controller : ControllerBase {
-        [HttpGet]
-        public async Task<IActionResult> Get () {
-            List<TodoItem> lTodoItem = new List<TodoItem>(){
-                new TodoItem(){Name="test1",Description="test1"},
-                new TodoItem(){Name="test2",Description="test2"}
-            };
-
-            if (lTodoItem != null && lTodoItem.Count > 0) {
-                return Ok (lTodoItem);
-            }
-
-            return NotFound ();
-        }
     }
 }

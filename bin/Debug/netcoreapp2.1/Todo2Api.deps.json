@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "627988585455976b7bc9895153306a9472c84094"
+    "signature": "cc6faa2c8fcfb05703ebdd798bfe17ac291a5c1f"
   },
   "compilationOptions": {
     "defines": [
@@ -26,10 +26,12 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Mvc.Versioning": "2.3.0",
+          "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "2.2.0",
           "Microsoft.NETCore.App": "2.1.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.1.0",
-          "Swashbuckle.AspNetCore": "4.0.1"
+          "Swashbuckle.AspNetCore": "4.0.1",
+          "Swashbuckle.AspNetCore.SwaggerUI": "4.0.1"
         },
         "runtime": {
           "Todo2Api.dll": {}
@@ -50,6 +52,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.ApiExplorer": "2.1.1",
+          "Microsoft.AspNetCore.Mvc.Versioning": "2.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.6614.20922"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational.Design/1.1.2": {
@@ -3307,6 +3324,13 @@
       "sha512": "sha512-imFDMw7KxV4hmhTiB5/39pYMPhoSLXSvwRL4vu/TVvqsoQFA/sEzNp+uB6oR4CYvZdrAvng2UJVcPJnoBx9YYA==",
       "path": "microsoft.aspnetcore.mvc.versioning/2.3.0",
       "hashPath": "microsoft.aspnetcore.mvc.versioning.2.3.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aCYMbC7C0nqVfunfxzqIE0ig40kWGQXZhJZg9rwD223at/4r0FmUMzRv4uXDRcJSzM+3AY9hJxLrsRVSqxIyQQ==",
+      "path": "microsoft.aspnetcore.mvc.versioning.apiexplorer/2.2.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.apiexplorer.2.2.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational.Design/1.1.2": {
       "type": "package",

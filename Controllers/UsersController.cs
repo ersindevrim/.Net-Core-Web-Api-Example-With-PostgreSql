@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Todo2Api.Services;
-using Todo2Api.Entities;
+using Todo2Api.V1.Entities;
 using Todo2Api.Models;
 using Todo2Api.Models.BodyModels;
 

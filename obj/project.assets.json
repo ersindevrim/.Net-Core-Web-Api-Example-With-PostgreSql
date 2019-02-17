@@ -1077,6 +1077,19 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.ApiExplorer": "2.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -5258,6 +5271,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.xml",
         "microsoft.aspnetcore.mvc.versioning.2.3.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.versioning.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/2.2.0": {
+      "sha512": "aCYMbC7C0nqVfunfxzqIE0ig40kWGQXZhJZg9rwD223at/4r0FmUMzRv4uXDRcJSzM+3AY9hJxLrsRVSqxIyQQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.versioning.apiexplorer/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.xml",
+        "microsoft.aspnetcore.mvc.versioning.apiexplorer.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.versioning.apiexplorer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.1.1": {
@@ -11803,10 +11829,12 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Mvc.Versioning >= 2.3.0",
+      "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 2.2.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "NpgSql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.1.0",
-      "Swashbuckle.AspNetCore >= 4.0.1"
+      "Swashbuckle.AspNetCore >= 4.0.1",
+      "Swashbuckle.AspNetCore.SwaggerUi >= 4.0.1"
     ]
   },
   "packageFolders": {
@@ -11858,6 +11886,10 @@
             "target": "Package",
             "version": "[2.3.0, )"
           },
+          "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.1.0, )",
@@ -11872,6 +11904,10 @@
             "version": "[2.1.0, )"
           },
           "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerUi": {
             "target": "Package",
             "version": "[4.0.1, )"
           }
