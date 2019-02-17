@@ -39,6 +39,7 @@ namespace Todo2Api {
 
             services.AddSwaggerGen (x => {
                 x.SwaggerDoc ("v1", new Info { Title = "Core Api", Description = "Swagger Core Api" });
+                x.SwaggerDoc ("v2", new Info { Title = "Core Api", Description = "Swagger Core Api" });
                 x.OperationFilter<SwaggerDefaultValues> ();
                 // Swagger 2.+ support
                 var security = new Dictionary<string, IEnumerable<string>> { { "Bearer", new string[] { } }, };

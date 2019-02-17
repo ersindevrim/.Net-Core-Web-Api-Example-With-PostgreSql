@@ -13,23 +13,23 @@ using Todo2Api.V2.Entities;
 using Todo2Api.V2.Models;
 
 namespace Todo2Api.V2.Controllers {
-    [ApiVersion("2.0")]  
-    [Route("api/v{version:apiVersion}/[controller]")] 
+    [ApiVersion ("2.0")]
+    [Route ("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class TodoController : ControllerBase {
-        private readonly TodoContext _context;
-
-        public TodoController (TodoContext context) {
-            _context = context;
-            if (_context.TodoItems.Count () == 0) {
-                _context.TodoItems.Add (new TodoItem { Name = "Item1" });
-                _context.SaveChanges ();
-            }
-        }
 
         [HttpGet]
         public async Task<IActionResult> Get () {
-            List<TodoItem> lTodoItem = _context.TodoItems.ToList ();
+            List<TodoItem> lTodoItem = new List<TodoItem> ();
+
+            TodoItem rTodoItem = new TodoItem () {
+                Id = 1,
+                Name = "Versiyon 2",
+                Description = "Versiyon 2 açıklaması",
+                IsComplete = true
+            };
+
+            lTodoItem.Add(rTodoItem);
 
             if (lTodoItem != null && lTodoItem.Count > 0) {
                 return Ok (lTodoItem);
@@ -38,41 +38,5 @@ namespace Todo2Api.V2.Controllers {
             return NotFound ();
         }
 
-        // GET api/values/5
-        [HttpGet ("{q}")]
-        public async Task<IActionResult> Get (String q) {
-            List<TodoItem> lTodoItem = _context.TodoItems.Where (x => x.Name == q).ToList ();
-
-            if (lTodoItem != null && lTodoItem.Count > 0) {
-                return Ok (lTodoItem);
-            }
-
-            return NotFound (new { Message = q + " Aranılan öğre bulunamadı.", Title = "Öğe bulunamadı." });
-        }
-
-        // POST api/values
-        [HttpPost]
-        public async Task<IActionResult> Post (String work) {
-            if (!String.IsNullOrEmpty (work)) {
-                TodoItem item = new TodoItem () {
-                    Name = work
-                };
-
-                _context.TodoItems.Add (item);
-                _context.SaveChanges ();
-
-                return Ok (item);
-            } else {
-                return BadRequest (new { Message = "asd", Title = "test" });
-            }
-        }
-
-        // PUT api/values/5
-        [HttpPut ("{id}")]
-        public void Put (int id, [FromBody] string value) { }
-
-        // DELETE api/values/5
-        [HttpDelete ("{id}")]
-        public void Delete (int id) { }
     }
 }
