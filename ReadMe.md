@@ -533,4 +533,3 @@ return new string[] { "value1 from Version 2", "value2 from Version 2" };
 options => options.ApiVersionReader = new MediaTypeApiVersionReader();
 
 Hope this helps.
-You can find my all .NET core posts here.

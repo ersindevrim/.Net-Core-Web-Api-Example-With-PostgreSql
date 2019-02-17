@@ -11816,11 +11816,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/Todo2Api.csproj",
+      "projectUniqueName": "/Users/ersindevrim/Documents/ErsinProjects/Git Projects/GitHub/NetCore WebApi Example/.Net-Core-Web-Api-Example-With-PostgreSql/Todo2Api.csproj",
       "projectName": "Todo2Api",
-      "projectPath": "/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/Todo2Api.csproj",
+      "projectPath": "/Users/ersindevrim/Documents/ErsinProjects/Git Projects/GitHub/NetCore WebApi Example/.Net-Core-Web-Api-Example-With-PostgreSql/Todo2Api.csproj",
       "packagesPath": "/Users/ersindevrim/.nuget/packages/",
-      "outputPath": "/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/",
+      "outputPath": "/Users/ersindevrim/Documents/ErsinProjects/Git Projects/GitHub/NetCore WebApi Example/.Net-Core-Web-Api-Example-With-PostgreSql/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
