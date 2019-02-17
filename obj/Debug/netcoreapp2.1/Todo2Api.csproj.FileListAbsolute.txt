@@ -1,0 +1,14 @@
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/bin/Debug/netcoreapp2.1/Todo2Api.deps.json
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/bin/Debug/netcoreapp2.1/Todo2Api.runtimeconfig.json
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/bin/Debug/netcoreapp2.1/Todo2Api.runtimeconfig.dev.json
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/bin/Debug/netcoreapp2.1/Todo2Api.dll
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/bin/Debug/netcoreapp2.1/Todo2Api.pdb
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.csprojAssemblyReference.cache
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.csproj.CoreCompileInputs.cache
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.RazorAssemblyInfo.cache
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.RazorAssemblyInfo.cs
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.AssemblyInfoInputs.cache
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.AssemblyInfo.cs
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.RazorTargetAssemblyInfo.cache
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.dll
+/Users/ersindevrim/Documents/ErsinProjects/VS Code Projects/todo2Api/Todo2Api/obj/Debug/netcoreapp2.1/Todo2Api.pdb
