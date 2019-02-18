@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Todo2Api.V1.Entities;
-using Todo2Api.V1.Models;
+using Todo2Api.Entities;
+using Todo2Api.Models;
 
 namespace Todo2Api.V1.Controllers {
     [ApiVersion("1.0")]  

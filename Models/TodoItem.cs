@@ -1,4 +1,4 @@
-namespace Todo2Api.V2.Models
+namespace Todo2Api.Models
 {
     public class TodoItem
     {

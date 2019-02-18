@@ -21,7 +21,7 @@ using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Swagger;
 using Todo2Api.Helpers;
 using Todo2Api.Services;
-using Todo2Api.V1.Entities;
+using Todo2Api.Entities;
 
 namespace Todo2Api {
     public class Startup {

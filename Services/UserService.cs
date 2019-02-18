@@ -6,7 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Todo2Api.V1.Entities;
+using Todo2Api.Entities;
 using Todo2Api.Helpers;
 using Todo2Api.Models;
 
