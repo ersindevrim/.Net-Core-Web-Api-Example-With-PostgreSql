@@ -1,3 +1,5 @@
+#An basic example for .net core web api, postgresql, swagger, Authorizetion and versioning.
+
 Aşağıda yeni bir proje nasıl oluşturulur.
 Gerekli nugetler nasıl eklenir ve basic bir TODO app nasıl yapılır adım adım anlatımı mevcuttur.
 
